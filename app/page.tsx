@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const courseUrl = "https://karinakandatyan.getcourse.ru/course";
 const telegramUrl = "https://t.me/Karkants";
 
@@ -54,12 +52,11 @@ export default function Home() {
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="heroPortrait" aria-hidden="true">
-          <Image
+          <img
             src="/karina-hero.jpeg"
             alt=""
             width={601}
             height={900}
-            priority
           />
         </div>
         <div className="heroGlow" />
@@ -122,12 +119,12 @@ export default function Home() {
 
         <div className="photoEssay" aria-label="Фотографии Карины Кандатьян">
           <figure className="photoCandid">
-            <Image src="/karina-candid.jpeg" alt="Карина Кандатьян" width={640} height={640} />
+            <img src="/karina-candid.jpeg" alt="Карина Кандатьян" width={640} height={640} />
             <figcaption>В работе важен не образ «идеального себя», а живой человек.</figcaption>
           </figure>
           <p className="photoWord" aria-hidden="true">CONTACT</p>
           <figure className="photoProfile">
-            <Image src="/karina-profile.jpeg" alt="Карина Кандатьян во время беседы" width={640} height={640} />
+            <img src="/karina-profile.jpeg" alt="Карина Кандатьян во время беседы" width={640} height={640} />
             <figcaption>Доказательный подход.<br />Живой контакт.</figcaption>
           </figure>
         </div>
