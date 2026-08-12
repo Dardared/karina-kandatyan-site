@@ -79,11 +79,13 @@ export default function GroundingPractice() {
         <div className="practiceStart">
           <p className="practiceNumber" aria-hidden="true">01:30</p>
           <div>
-            <h3 id="grounding-title">Когда тревога уводит<br />в «а вдруг» — вернитесь<br />в то, что есть сейчас.</h3>
+            <h3 id="grounding-title">Тревожно прямо сейчас?</h3>
+            <p className="practiceSubtitle">Попробуйте короткую практику 5–4–3–2–1</p>
             <p>
-              Эта короткая практика переключает внимание с тревожных мыслей
-              на реальные ощущения. Ничего вводить и сохранять не нужно.
+              Небольшое упражнение, которое возвращает внимание из «а вдруг?»
+              к тому, что происходит сейчас.
             </p>
+            <p className="practiceSequence" aria-hidden="true">5 <i>·</i> 4 <i>·</i> 3 <i>·</i> 2 <i>·</i> 1</p>
             <button type="button" onClick={() => setStarted(true)}>
               Начать практику <span aria-hidden="true">→</span>
             </button>

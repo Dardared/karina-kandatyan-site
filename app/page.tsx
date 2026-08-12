@@ -43,9 +43,9 @@ export default function Home() {
           <span>Кандатьян</span>
         </a>
         <div className="navLinks">
-          <a href="#about">О Карине</a>
-          <a href="#course">Курс</a>
+          <a href="#about">Обо мне</a>
           <a href="#practice">Практика</a>
+          <a href="#course">Курс</a>
           <a href="#media">Медиа</a>
         </div>
         <a className="navCourse" href={courseUrl} target="_blank" rel="noreferrer">
@@ -62,43 +62,46 @@ export default function Home() {
             height={900}
           />
         </div>
-        <div className="heroGlow" />
         <div className="heroGrid" />
         <div className="shell heroInner">
-          <p className="heroKicker"><span>КПТ</span> Клинический психолог / коуч ICF</p>
+          <p className="heroKicker">Клинический психолог · КПТ-терапевт · коуч ICF</p>
           <h1 id="hero-title">
             Понять<br />
             <span>себя —</span><br />
-            <em className="heroLast">и действовать.</em>
+            <em>и действовать.</em>
           </h1>
           <p className="heroLead">
-            Я работаю в доказательном подходе — без обещаний «новой жизни за неделю».
-            Ясно, честно и с инструментами, которые можно применять.
+            Я Карина Кандатьян, клинический психолог и КПТ-терапевт. Помогаю понять,
+            что поддерживает тревогу, напряжение и повторяющиеся сценарии — и находить
+            действия, которые работают в реальной жизни.
           </p>
+          <p className="heroProof">Доказательный подход · без обещаний «новой жизни за неделю»</p>
           <div className="heroActions">
             <a className="primaryAction" href={courseUrl} target="_blank" rel="noreferrer">
-              <span>Перейти на курс</span><b aria-hidden="true">↗</b>
+              <span>Перейти к курсу</span><b aria-hidden="true">↗</b>
             </a>
             <a className="quietAction" href={telegramUrl} target="_blank" rel="noreferrer">
               Личная консультация <span aria-hidden="true">↗</span>
             </a>
           </div>
-          <a className="heroPractice" href="#practice">
-            <span><b>Тревожно прямо сейчас?</b><small>Пройти практику 5–4–3–2–1</small></span>
-            <i>90 секунд <strong aria-hidden="true">↓</strong></i>
-          </a>
         </div>
         <p className="heroName" aria-hidden="true">KARINA KANDATYAN</p>
         <p className="heroSide" aria-hidden="true">психология × ясность × действие</p>
       </section>
 
+      <div className="practiceSection">
+        <div className="shell">
+          <GroundingPractice />
+        </div>
+      </div>
+
       <section className="about shell" id="about">
         <div className="chapter">
           <span>01</span>
-          <p>О Карине</p>
+          <p>Обо мне</p>
         </div>
         <div className="aboutStatement">
-          <p className="overline">Клинический психолог · КПТ-терапевт · семейный консультант</p>
+          <p className="overline">Клинический психолог · КПТ-терапевт · коуч ICF</p>
           <h2>
             «Разумом всё понимаю» —<br />
             <em>не значит, что легко изменить.</em>
@@ -110,11 +113,14 @@ export default function Home() {
               в новое действие.
             </p>
             <p>
-              В центре моей работы не диагноз и не универсальный совет, а вы,
-              ваша ситуация и честный разговор. Для меня доказательный подход
-              не отменяет живого контакта.
+              В моей работе в центре не диагноз и не универсальный совет, а человек,
+              его ситуация и честный разговор. Доказательный подход для меня не отменяет
+              живого контакта.
             </p>
           </div>
+          <a className="trustLink" href="https://www.b17.ru/tsatskina_karina/" target="_blank" rel="noreferrer">
+            Образование и специализация <span aria-hidden="true">→</span>
+          </a>
         </div>
 
         <div className="photoEssay" aria-label="Фотографии Карины Кандатьян">
@@ -122,14 +128,17 @@ export default function Home() {
             <img src="/karina-candid.jpeg" alt="Карина Кандатьян" width={640} height={640} />
             <figcaption>В моей работе важен не образ «идеального себя», а живой человек.</figcaption>
           </figure>
-          <p className="photoWord" aria-hidden="true">CONTACT</p>
           <figure className="photoProfile">
             <img src="/karina-profile.jpeg" alt="Карина Кандатьян во время беседы" width={640} height={640} />
             <figcaption>Доказательный подход.<br />Живой контакт.</figcaption>
           </figure>
         </div>
 
-        <div className="focusFlow" aria-label="Темы работы">
+        <div className="focusHeading">
+          <p>С чем я работаю</p>
+          <span>Направления индивидуальной работы</span>
+        </div>
+        <div className="focusFlow" aria-label="С чем я работаю">
           {focus.map(([index, title, text]) => (
             <article key={index}>
               <span>{index}</span>
@@ -150,7 +159,7 @@ export default function Home() {
           <h2 id="course-title">
             «А вдруг?»<br />
             <em>Тревожность</em><br />
-            <span className="courseLast">и неопределённость</span>
+            <span>и неопределённость</span>
           </h2>
           <div className="courseBody">
             <p>
@@ -165,12 +174,10 @@ export default function Home() {
             </div>
           </div>
           <a className="courseAction" href={courseUrl} target="_blank" rel="noreferrer">
-            <span>Вся программа и доступ к курсу</span>
+            <span>Посмотреть программу курса</span>
             <b aria-hidden="true">↗</b>
           </a>
-          <GroundingPractice />
         </div>
-        <p className="courseGhost" aria-hidden="true">UNCERTAINTY</p>
       </section>
 
       <section className="media" id="media" aria-labelledby="media-title">
@@ -210,13 +217,10 @@ export default function Home() {
 
       <footer className="footer shell">
         <p className="footerName">Карина<br />Кандатьян</p>
-        <p>Клинический психолог<br />КПТ-терапевт · коуч ICF</p>
+        <p>Клинический психолог · КПТ-терапевт · коуч ICF</p>
         <a href="#top">Наверх ↑</a>
       </footer>
 
-      <a className="mobileAction" href={courseUrl} target="_blank" rel="noreferrer">
-        Перейти на курс <span aria-hidden="true">↗</span>
-      </a>
     </main>
   );
 }
