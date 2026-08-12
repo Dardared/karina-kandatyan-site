@@ -45,6 +45,7 @@ export default function Home() {
         <div className="navLinks">
           <a href="#about">О Карине</a>
           <a href="#course">Курс</a>
+          <a href="#practice">Практика</a>
           <a href="#media">Медиа</a>
         </div>
         <a className="navCourse" href={courseUrl} target="_blank" rel="noreferrer">
@@ -68,11 +69,11 @@ export default function Home() {
           <h1 id="hero-title">
             Понять<br />
             <span>себя —</span><br />
-            <em>и действовать.</em>
+            <em className="heroLast">и действовать.</em>
           </h1>
           <p className="heroLead">
-            Доказательная психология без обещаний «новой жизни за неделю».
-            Ясно. Честно. С инструментами, которые можно применять.
+            Я работаю в доказательном подходе — без обещаний «новой жизни за неделю».
+            Ясно, честно и с инструментами, которые можно применять.
           </p>
           <div className="heroActions">
             <a className="primaryAction" href={courseUrl} target="_blank" rel="noreferrer">
@@ -82,6 +83,10 @@ export default function Home() {
               Личная консультация <span aria-hidden="true">↗</span>
             </a>
           </div>
+          <a className="heroPractice" href="#practice">
+            <span><b>Тревожно прямо сейчас?</b><small>Пройти практику 5–4–3–2–1</small></span>
+            <i>90 секунд <strong aria-hidden="true">↓</strong></i>
+          </a>
         </div>
         <p className="heroName" aria-hidden="true">KARINA KANDATYAN</p>
         <p className="heroSide" aria-hidden="true">психология × ясность × действие</p>
@@ -100,14 +105,14 @@ export default function Home() {
           </h2>
           <div className="aboutCopy">
             <p className="aboutIntro">
-              Карина помогает увидеть, что именно поддерживает тревогу,
+              Я помогаю увидеть, что именно поддерживает тревогу,
               напряжение или повторяющийся сценарий — и превратить понимание
               в новое действие.
             </p>
             <p>
-              В центре работы не диагноз и не универсальный совет, а конкретный
-              человек, его ситуация и честный разговор. Доказательный подход
-              здесь не отменяет живого контакта.
+              В центре моей работы не диагноз и не универсальный совет, а вы,
+              ваша ситуация и честный разговор. Для меня доказательный подход
+              не отменяет живого контакта.
             </p>
           </div>
         </div>
@@ -115,7 +120,7 @@ export default function Home() {
         <div className="photoEssay" aria-label="Фотографии Карины Кандатьян">
           <figure className="photoCandid">
             <img src="/karina-candid.jpeg" alt="Карина Кандатьян" width={640} height={640} />
-            <figcaption>В работе важен не образ «идеального себя», а живой человек.</figcaption>
+            <figcaption>В моей работе важен не образ «идеального себя», а живой человек.</figcaption>
           </figure>
           <p className="photoWord" aria-hidden="true">CONTACT</p>
           <figure className="photoProfile">
@@ -145,11 +150,11 @@ export default function Home() {
           <h2 id="course-title">
             «А вдруг?»<br />
             <em>Тревожность</em><br />
-            и неопределённость
+            <span className="courseLast">и неопределённость</span>
           </h2>
           <div className="courseBody">
             <p>
-              Курс помогает не подавлять тревогу, а понимать её механику.
+              Я собрала этот курс, чтобы помочь не подавлять тревогу, а понимать её механику.
               Вы соберёте личную систему самопомощи и научитесь действовать,
               даже когда полной определённости нет.
             </p>
@@ -170,7 +175,7 @@ export default function Home() {
 
       <section className="media" id="media" aria-labelledby="media-title">
         <div className="shell mediaIntro">
-          <p>Карина вне кабинета</p>
+          <p>Вне кабинета</p>
           <h2 id="media-title">Смотреть.<br /><em>Читать.</em> Узнавать.</h2>
         </div>
         <div className="socialStage">
@@ -197,7 +202,7 @@ export default function Home() {
           <p>Индивидуальная работа</p>
           <h2 id="contact-title">Есть ситуация,<br />которую хочется <em>разобрать?</em></h2>
           <a href={telegramUrl} target="_blank" rel="noreferrer">
-            <span>Написать Карине<br /><small>в Telegram</small></span>
+            <span>Написать мне<br /><small>в Telegram</small></span>
             <b aria-hidden="true">↗</b>
           </a>
         </div>

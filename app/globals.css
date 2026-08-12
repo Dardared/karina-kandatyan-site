@@ -48,7 +48,7 @@ h1, h2, h3, p { margin-top: 0; }
 .heroGrid { position: absolute; inset: 0; z-index: -3; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 96px 96px; mask-image: linear-gradient(90deg, black, transparent 70%); }
 .heroInner { height: 100%; min-height: 940px; display: flex; flex-direction: column; justify-content: center; padding-top: 74px; position: relative; }
 .heroKicker { display: flex; align-items: center; gap: 16px; color: #c6c6c2; font-size: 10px; text-transform: uppercase; letter-spacing: .17em; margin: 0 0 36px 4px; }
-.heroKicker span { color: var(--ink); background: var(--gold); border-radius: 50%; width: 48px; height: 48px; display: grid; place-items: center; font-weight: 800; letter-spacing: 0; }
+.heroKicker span { color: var(--gold); border: 1px solid var(--gold); width: 48px; height: 28px; display: grid; place-items: center; font-weight: 800; letter-spacing: 0; }
 .hero h1 { position: relative; z-index: 2; max-width: 1020px; margin: 0; font-family: 'Unbounded', sans-serif; font-size: clamp(62px, 7.35vw, 126px); font-weight: 500; line-height: .9; letter-spacing: -.075em; text-transform: uppercase; }
 .hero h1 span { color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.8); }
 .hero h1 em { display: inline-block; color: var(--red); font-style: normal; transform: translateX(9vw); }
@@ -59,6 +59,13 @@ h1, h2, h3, p { margin-top: 0; }
 .primaryAction:hover { background: #ff2f37; transform: translateY(-4px); }
 .quietAction { padding-bottom: 8px; border-bottom: 1px solid #777; color: #d3d3d0; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
 .quietAction span { margin-left: 18px; color: var(--gold); }
+.heroPractice { width: min(620px, 100%); margin-top: 34px; padding: 14px 0; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.22); border-bottom: 1px solid rgba(255,255,255,.22); transition: padding .25s, border-color .25s; }
+.heroPractice:hover { padding-left: 14px; border-color: var(--gold); }
+.heroPractice > span { display: flex; align-items: baseline; gap: 18px; }
+.heroPractice b { color: var(--white); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+.heroPractice small { color: #9299a5; font-size: 10px; }
+.heroPractice i { color: var(--gold); font-size: 9px; font-style: normal; text-transform: uppercase; letter-spacing: .12em; white-space: nowrap; }
+.heroPractice strong { margin-left: 9px; color: var(--red); font-size: 17px; }
 .heroName { position: absolute; z-index: 4; left: 3.6vw; bottom: 25px; margin: 0; color: rgba(255,255,255,.12); font-family: 'Unbounded', sans-serif; font-size: clamp(26px, 4.1vw, 72px); letter-spacing: -.05em; white-space: nowrap; }
 .heroSide { position: absolute; z-index: 5; right: 25px; top: 48%; margin: 0; writing-mode: vertical-rl; color: rgba(255,255,255,.55); font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .23em; }
 
@@ -95,6 +102,7 @@ h1, h2, h3, p { margin-top: 0; }
 .coursePre { margin: 64px 0 14px; font-size: 12px; text-transform: uppercase; letter-spacing: .12em; }
 .course h2 { max-width: 1120px; margin: 0; font-family: 'Unbounded', sans-serif; font-size: clamp(50px, 6.4vw, 102px); line-height: .96; letter-spacing: -.075em; font-weight: 500; text-transform: uppercase; }
 .course h2 em { color: var(--ice); font-style: normal; }
+.courseLast { display: inline-block; font-size: .84em; letter-spacing: -.065em; }
 .courseBody { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; width: 77%; margin: 56px 0 0 auto; align-items: end; }
 .courseBody > p { max-width: 500px; color: rgba(255,255,255,.8); font-size: 16px; line-height: 1.75; }
 .courseNumbers { display: flex; gap: clamp(32px, 5vw, 86px); }
@@ -231,19 +239,24 @@ h1, h2, h3, p { margin-top: 0; }
   .navCourse { display: none; }
   .hero { min-height: 790px; height: auto; }
   .heroInner { min-height: 790px; padding-top: 135px; justify-content: flex-start; }
-  .heroPortrait { width: 100%; height: 57%; top: auto; bottom: 0; opacity: .54; }
-  .heroPortrait img { object-position: center 12%; }
-  .heroPortrait::after { background: linear-gradient(0deg, rgba(5,5,5,.65), var(--ink) 93%), linear-gradient(90deg, var(--ink), transparent 50%); }
+  .heroPortrait { width: 100%; height: 58%; top: auto; bottom: 0; opacity: .9; }
+  .heroPortrait img { object-position: center 18%; animation: none; transform: scale(1.04); }
+  .heroPortrait::after { background: linear-gradient(180deg, var(--ink) 0, rgba(5,5,5,.2) 30%, rgba(5,5,5,.38) 100%), linear-gradient(90deg, rgba(5,5,5,.68), transparent 58%); }
   .heroGlow { width: 120vw; right: -42vw; top: 31%; }
   .heroGrid { background-size: 52px 52px; }
   .heroKicker { align-items: center; max-width: 250px; line-height: 1.5; margin-bottom: 28px; }
-  .heroKicker span { width: 40px; height: 40px; flex: 0 0 40px; }
+  .heroKicker span { width: 40px; height: 26px; flex: 0 0 40px; }
   .hero h1 { font-size: clamp(44px, 13.8vw, 72px); line-height: .93; }
   .hero h1 span { -webkit-text-stroke-width: 1px; }
+  .hero h1 .heroLast { display: inline-block; font-size: .72em; letter-spacing: -.055em; transform: none; white-space: nowrap; }
   .heroLead { margin-top: 32px; font-size: 13px; line-height: 1.65; max-width: 88%; }
   .heroActions { align-items: flex-start; flex-direction: column; gap: 24px; margin-top: 29px; }
   .primaryAction { min-height: 60px; width: 240px; }
   .quietAction { font-size: 10px; }
+  .heroPractice { margin-top: 27px; padding: 12px 0; }
+  .heroPractice > span { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .heroPractice small { font-size: 8px; }
+  .heroPractice i { font-size: 7px; }
   .heroName { bottom: 16px; left: 16px; font-size: 22px; }
   .heroSide { display: none; }
   .pulse { height: 49px; font-size: 9px; }
@@ -262,7 +275,8 @@ h1, h2, h3, p { margin-top: 0; }
   .course { padding: 70px 0 70px; }
   .courseTopline span:last-child { display: none; }
   .coursePre { margin-top: 58px; }
-  .course h2 { font-size: 42px; }
+  .course h2 { font-size: clamp(35px, 10.8vw, 42px); line-height: 1.02; }
+  .courseLast { max-width: 100%; font-size: .68em; letter-spacing: -.045em; white-space: nowrap; }
   .course::before { width: 90vw; height: 100%; right: 0; top: 0; }
   .courseBody { margin-top: 48px; }
   .courseBody > p { font-size: 14px; }
@@ -289,7 +303,7 @@ h1, h2, h3, p { margin-top: 0; }
   .socialArrow { width: 44px; height: 44px; font-size: 18px; }
   .contact { min-height: 650px; }
   .contact h2 { font-size: 40px; }
-  .contactInner > a { width: 200px; padding: 28px; font-size: 10px; }
+  .contactInner > a { width: 100%; padding: 0 12px; font-size: 10px; }
   .footer { min-height: 210px; grid-template-columns: 1fr auto; padding-bottom: 70px; }
   .footer > p:nth-child(2) { display: none; }
   .mobileAction { position: fixed; z-index: 30; left: 12px; right: 12px; bottom: 12px; min-height: 54px; padding: 0 18px; display: flex; align-items: center; justify-content: space-between; background: var(--red); color: white; box-shadow: 0 12px 38px rgba(0,0,0,.45); font-family: 'Unbounded', sans-serif; font-size: 9px; text-transform: uppercase; }

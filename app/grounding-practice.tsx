@@ -66,7 +66,7 @@ export default function GroundingPractice() {
   }
 
   return (
-    <section className="grounding" aria-labelledby="grounding-title">
+    <section className="grounding" id="practice" aria-labelledby="grounding-title">
       <div className="groundingTop">
         <p>Попробовать прямо сейчас</p>
         <span>5–4–3–2–1 / заземление</span>
