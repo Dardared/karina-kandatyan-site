@@ -16,21 +16,18 @@ const socials = [
     name: "Instagram",
     note: "мысли, наблюдения, жизнь",
     href: "https://www.instagram.com/karina_kanda/",
-    className: "instagram",
   },
   {
     index: "02",
     name: "YouTube",
     note: "разговоры о психологии",
     href: "https://www.youtube.com/@%D0%9A%D0%B0%D1%80%D0%B8%D0%BD%D0%B0%D0%9A%D0%B0%D0%BD%D0%B4%D0%B0%D1%82%D1%8C%D1%8F%D0%BD",
-    className: "youtube",
   },
   {
     index: "03",
     name: "B17",
     note: "образование и специализация",
     href: "https://www.b17.ru/tsatskina_karina/",
-    className: "b17",
   },
 ];
 
@@ -90,9 +87,7 @@ export default function Home() {
       </section>
 
       <div className="practiceSection">
-        <div className="shell">
-          <GroundingPractice />
-        </div>
+        <GroundingPractice />
       </div>
 
       <section className="about shell" id="about">
@@ -185,10 +180,10 @@ export default function Home() {
           <p>Вне кабинета</p>
           <h2 id="media-title">Смотреть.<br /><em>Читать.</em> Узнавать.</h2>
         </div>
-        <div className="socialStage">
+        <div className="socialStage shell">
           {socials.map((social) => (
             <a
-              className={`socialRow ${social.className}`}
+              className="socialRow"
               href={social.href}
               target="_blank"
               rel="noreferrer"
