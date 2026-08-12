@@ -1,3 +1,5 @@
+import GroundingPractice from "./grounding-practice";
+
 const courseUrl = "https://karinakandatyan.getcourse.ru/course";
 const telegramUrl = "https://t.me/Karkants";
 
@@ -85,13 +87,6 @@ export default function Home() {
         <p className="heroSide" aria-hidden="true">психология × ясность × действие</p>
       </section>
 
-      <div className="pulse" aria-hidden="true">
-        <div>
-          <span>НЕ ОБЯЗАТЕЛЬНО ЗНАТЬ ВСЕ ОТВЕТЫ</span><i>✦</i><span>МОЖНО НАЧАТЬ С ВОПРОСА</span><i>✦</i>
-          <span>НЕ ОБЯЗАТЕЛЬНО ЗНАТЬ ВСЕ ОТВЕТЫ</span><i>✦</i><span>МОЖНО НАЧАТЬ С ВОПРОСА</span><i>✦</i>
-        </div>
-      </div>
-
       <section className="about shell" id="about">
         <div className="chapter">
           <span>01</span>
@@ -141,16 +136,6 @@ export default function Home() {
       </section>
 
       <section className="course" id="course" aria-labelledby="course-title">
-        <div className="anxietyLoop" aria-hidden="true">
-          <span className="loopRing ringOne" />
-          <span className="loopRing ringTwo" />
-          <span className="loopRing ringThree" />
-          <b>?</b>
-          <i className="thought thoughtOne">мысль</i>
-          <i className="thought thoughtTwo">контроль</i>
-          <i className="thought thoughtThree">облегчение</i>
-          <i className="thought thoughtFour">повтор</i>
-        </div>
         <div className="shell courseInner">
           <div className="courseTopline">
             <span>02 / Онлайн-курс</span>
@@ -175,29 +160,12 @@ export default function Home() {
             </div>
           </div>
           <a className="courseAction" href={courseUrl} target="_blank" rel="noreferrer">
-            <span>Вся программа<br />и доступ к курсу</span>
+            <span>Вся программа и доступ к курсу</span>
             <b aria-hidden="true">↗</b>
           </a>
+          <GroundingPractice />
         </div>
         <p className="courseGhost" aria-hidden="true">UNCERTAINTY</p>
-      </section>
-
-      <section className="method shell" aria-labelledby="method-title">
-        <div className="chapter">
-          <span>03</span>
-          <p>Подход</p>
-        </div>
-        <div className="methodIntro">
-          <h2 id="method-title">Не «исправить себя».<br /><em>Разобраться с собой.</em></h2>
-          <p>Три движения, из которых складываются устойчивые изменения.</p>
-        </div>
-        <div className="methodLine">
-          <article><span>1</span><h3>Понять</h3><p>Что происходит и что поддерживает напряжение.</p></article>
-          <i aria-hidden="true">→</i>
-          <article><span>2</span><h3>Проверить</h3><p>Где тревожный прогноз, а где факты и реальная задача.</p></article>
-          <i aria-hidden="true">→</i>
-          <article><span>3</span><h3>Действовать</h3><p>Выбрать инструмент и закрепить новый способ реагировать.</p></article>
-        </div>
       </section>
 
       <section className="media" id="media" aria-labelledby="media-title">
