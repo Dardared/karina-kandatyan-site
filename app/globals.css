@@ -71,23 +71,23 @@ main, section, div { min-width: 0; }
 .groundingProgress i { display: block; height: 100%; background: var(--gold); transition: width .45s cubic-bezier(.2,.8,.2,1); }
 .practiceStart, .practiceFinish, .practiceStep { min-height: 420px; padding: 52px 0 42px; display: grid; grid-template-columns: .42fr 1fr; gap: 7vw; align-items: center; }
 .practiceStart, .practiceFinish, .practiceStep { animation: practiceReveal .35s ease both; }
-.practiceNumber { width: max-content; margin: 0; align-self: start; padding: 9px 12px; border: 1px solid rgba(200,164,77,.5); color: var(--gold); font-family: 'Unbounded', sans-serif; font-size: 12px; letter-spacing: .08em; }
-.practiceStart h3, .practiceFinish h3, .practiceStep h3 { margin: 0; font-family: 'Unbounded', sans-serif; font-size: clamp(34px, 4vw, 60px); line-height: 1.06; letter-spacing: -.06em; font-weight: 400; }
-.practiceSubtitle { margin: 18px 0 0 !important; color: var(--white) !important; font-family: 'Unbounded', sans-serif; font-size: clamp(15px, 1.5vw, 22px) !important; line-height: 1.35 !important; letter-spacing: -.035em; }
+.practiceNumber { width: max-content; margin: 0; align-self: start; padding: 9px 12px; border: 1px solid rgba(200,164,77,.5); color: var(--gold); font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+.practiceStart h3, .practiceFinish h3, .practiceStep h3 { margin: 0; font-family: 'Manrope', sans-serif; font-size: clamp(34px, 4vw, 60px); line-height: 1.06; letter-spacing: -.045em; font-weight: 600; }
+.practiceSubtitle { margin: 18px 0 0 !important; color: var(--white) !important; font-family: 'Manrope', sans-serif; font-size: clamp(15px, 1.5vw, 22px) !important; font-weight: 500; line-height: 1.35 !important; letter-spacing: -.025em; }
 .practiceStart > div > p:not(.practiceSubtitle), .practiceFinish > div > p { max-width: 590px; margin: 22px 0; color: #aeb4bf; font-size: 13px; line-height: 1.7; }
-.practiceSequence { margin: 22px 0 10px !important; color: var(--ice) !important; font-family: 'Unbounded', sans-serif; font-size: 22px !important; letter-spacing: .12em; }
+.practiceSequence { margin: 22px 0 10px !important; color: var(--ice) !important; font-family: 'Manrope', sans-serif; font-size: 22px !important; font-weight: 600; letter-spacing: .16em; }
 .practiceSequence i { color: var(--gold); font-style: normal; }
-.practiceStart button, .practiceFinish button, .stepActions button { min-height: 54px; border: 0; border-bottom: 1px solid currentColor; padding: 0; background: transparent; color: var(--white); font: 600 9px 'Unbounded', sans-serif; text-transform: uppercase; letter-spacing: .05em; cursor: pointer; }
+.practiceStart button, .practiceFinish button, .stepActions button { min-height: 54px; border: 0; border-bottom: 1px solid currentColor; padding: 0; background: transparent; color: var(--white); font: 700 10px 'Manrope', sans-serif; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; }
 .practiceStart button, .practiceFinish button { min-width: 245px; display: inline-flex; align-items: center; justify-content: space-between; }
 .practiceStart button span { color: var(--gold); font-size: 21px; }
 .practiceStep { grid-template-columns: .62fr 1fr; }
 .stepCount { align-self: stretch; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid rgba(255,255,255,.17); }
-.stepCount strong { font-family: 'Unbounded', sans-serif; font-size: clamp(120px, 16vw, 240px); line-height: .72; letter-spacing: -.12em; font-weight: 400; color: var(--ice); }
+.stepCount strong { font-family: 'Manrope', sans-serif; font-size: clamp(120px, 16vw, 240px); line-height: .72; letter-spacing: -.1em; font-weight: 500; color: var(--ice); }
 .stepCount span { color: #aeb4bf; font-size: 10px; line-height: 1.6; text-transform: uppercase; letter-spacing: .12em; }
 .stepTask > p:first-child { color: var(--gold); font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; }
 .stepPrompt { max-width: 620px; margin: 25px 0 34px; color: #aeb4bf; font-size: 13px; line-height: 1.7; }
 .noticedLine { display: flex; margin-bottom: 30px; }
-.noticedLine span { flex: 1; padding: 11px 0; border-top: 1px solid rgba(255,255,255,.19); color: rgba(255,255,255,.32); font-family: 'Unbounded', sans-serif; font-size: 8px; transition: color .25s, border-color .25s; }
+.noticedLine span { flex: 1; padding: 11px 0; border-top: 1px solid rgba(255,255,255,.19); color: rgba(255,255,255,.32); font-family: 'Manrope', sans-serif; font-size: 9px; font-weight: 700; transition: color .25s, border-color .25s; }
 .noticedLine span.done { color: var(--gold); border-color: var(--gold); }
 .stepActions { display: flex; gap: 32px; }
 .stepActions button { width: 205px; display: flex; align-items: center; justify-content: space-between; }
@@ -98,10 +98,10 @@ main, section, div { min-width: 0; }
 
 .about { padding: 120px 0 130px; position: relative; }
 .chapter { display: flex; gap: 18px; align-items: baseline; color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .16em; }
-.chapter span { color: var(--gold); font-family: 'Unbounded', sans-serif; font-size: 10px; }
+.chapter span { color: var(--gold); font-family: 'Manrope', sans-serif; font-size: 10px; font-weight: 700; }
 .aboutStatement { width: 83%; margin-left: auto; padding: 58px 0 86px; }
 .overline { color: var(--gold); font-size: 9px; text-transform: uppercase; letter-spacing: .16em; }
-.about h2, .media h2, .contact h2 { font-family: 'Unbounded', sans-serif; font-weight: 400; letter-spacing: -.07em; }
+.about h2, .media h2, .contact h2 { font-family: 'Manrope', sans-serif; font-weight: 500; letter-spacing: -.055em; }
 .about h2 { margin: 30px 0 65px; font-size: clamp(46px, 5.4vw, 88px); line-height: 1.02; }
 .about h2 em { color: var(--red); font-style: normal; }
 .aboutCopy { display: grid; grid-template-columns: 1.08fr .92fr; gap: 8vw; margin-left: 18%; color: var(--muted); font-size: 14px; line-height: 1.8; }
@@ -116,14 +116,14 @@ main, section, div { min-width: 0; }
 .photoCandid { left: 8%; top: 12%; width: min(39vw, 490px); height: min(48vw, 610px); transform: rotate(-2deg); }
 .photoProfile { right: 5%; top: 0; width: min(31vw, 400px); height: min(39vw, 500px); transform: rotate(1.5deg); }
 .focusHeading { width: 84%; margin: 0 0 28px auto; display: flex; align-items: baseline; justify-content: space-between; }
-.focusHeading p { margin: 0; font-family: 'Unbounded', sans-serif; font-size: clamp(26px, 2.8vw, 42px); letter-spacing: -.05em; }
+.focusHeading p { margin: 0; font-family: 'Manrope', sans-serif; font-size: clamp(26px, 2.8vw, 42px); font-weight: 600; letter-spacing: -.04em; }
 .focusHeading span { color: var(--muted); font-size: 8px; text-transform: uppercase; letter-spacing: .15em; }
 .focusFlow { width: 84%; margin-left: auto; }
 .focusFlow article { min-height: 135px; display: grid; grid-template-columns: 74px 1fr .8fr; align-items: center; border-top: 1px solid var(--line); transition: color .25s, padding .25s; }
 .focusFlow article:last-child { border-bottom: 1px solid var(--line); }
 .focusFlow article:hover { color: var(--gold); padding-left: 10px; }
-.focusFlow article > span { color: var(--gold); font-family: 'Unbounded', sans-serif; font-size: 9px; }
-.focusFlow h3 { margin: 0; font-family: 'Unbounded', sans-serif; font-size: clamp(28px, 2.8vw, 46px); font-weight: 400; letter-spacing: -.05em; }
+.focusFlow article > span { color: var(--gold); font-family: 'Manrope', sans-serif; font-size: 9px; font-weight: 700; }
+.focusFlow h3 { margin: 0; font-family: 'Manrope', sans-serif; font-size: clamp(28px, 2.8vw, 46px); font-weight: 600; letter-spacing: -.04em; }
 .focusFlow p { max-width: 420px; margin: 0; color: var(--muted); line-height: 1.65; font-size: 12px; }
 
 .course { position: relative; overflow: hidden; background: linear-gradient(135deg, #08090b 0 38%, #111a2a 75%, #17243b 100%); color: white; padding: 105px 0 90px; isolation: isolate; }
@@ -131,16 +131,16 @@ main, section, div { min-width: 0; }
 .course::after { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(123deg, transparent 0 52%, rgba(0,0,0,.2) 52.1%); }
 .courseTopline { display: flex; justify-content: space-between; padding-bottom: 17px; border-bottom: 1px solid rgba(255,255,255,.4); font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; }
 .coursePre { margin: 60px 0 14px; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; }
-.course h2 { max-width: 1120px; margin: 0; font-family: 'Unbounded', sans-serif; font-size: clamp(49px, 6.2vw, 98px); line-height: .97; letter-spacing: -.075em; font-weight: 500; text-transform: uppercase; }
+.course h2 { max-width: 1120px; margin: 0; font-family: 'Manrope', sans-serif; font-size: clamp(49px, 6.2vw, 98px); line-height: .97; letter-spacing: -.06em; font-weight: 600; text-transform: uppercase; }
 .course h2 em { color: var(--ice); font-style: normal; }
 .courseBody { width: 77%; margin: 52px 0 0 auto; display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: end; }
 .courseBody > p { max-width: 510px; margin: 0; color: rgba(255,255,255,.78); font-size: 15px; line-height: 1.75; }
 .courseNumbers { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(255,255,255,.22); border-bottom: 1px solid rgba(255,255,255,.22); }
 .courseNumbers p { min-height: 128px; margin: 0; padding: 23px 18px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid rgba(255,255,255,.16); }
 .courseNumbers p:last-child { border-right: 0; }
-.courseNumbers b { font-family: 'Unbounded', sans-serif; font-size: clamp(38px, 4vw, 64px); line-height: 1; font-weight: 400; }
+.courseNumbers b { font-family: 'Manrope', sans-serif; font-size: clamp(38px, 4vw, 64px); line-height: 1; font-weight: 500; }
 .courseNumbers span { color: #aeb4bf; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; }
-.courseAction { width: 100%; min-height: 90px; margin: 68px 0 0; padding: 0 28px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.3); border-bottom: 1px solid rgba(255,255,255,.3); color: var(--white); font-family: 'Unbounded', sans-serif; font-size: 11px; line-height: 1.45; text-transform: uppercase; transition: color .3s, padding .3s, background .3s; }
+.courseAction { width: 100%; min-height: 90px; margin: 68px 0 0; padding: 0 28px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.3); border-bottom: 1px solid rgba(255,255,255,.3); color: var(--white); font-family: 'Manrope', sans-serif; font-size: 11px; font-weight: 700; line-height: 1.45; letter-spacing: .08em; text-transform: uppercase; transition: color .3s, padding .3s, background .3s; }
 .courseAction b { color: var(--gold); font-size: 31px; font-weight: 400; }
 .courseAction:hover { padding-left: 42px; background: var(--gold); color: var(--ink); }
 .courseAction:hover b { color: var(--ink); }
@@ -154,8 +154,8 @@ main, section, div { min-width: 0; }
 .socialRow { min-height: 138px; padding: 0 max(48px, calc((100vw - 1380px) / 2)); display: grid; grid-template-columns: 10% 42% 1fr auto; align-items: center; border-top: 1px solid rgba(255,255,255,.16); transition: background .3s, color .3s, padding .3s; }
 .socialRow:last-child { border-bottom: 1px solid rgba(255,255,255,.16); }
 .socialRow:hover { padding-left: max(62px, calc((100vw - 1350px) / 2)); }
-.socialIndex { color: var(--gold); font-family: 'Unbounded', sans-serif; font-size: 9px; }
-.socialRow strong { font-family: 'Unbounded', sans-serif; font-size: clamp(36px, 4.7vw, 70px); font-weight: 400; letter-spacing: -.06em; }
+.socialIndex { color: var(--gold); font-family: 'Manrope', sans-serif; font-size: 9px; font-weight: 700; }
+.socialRow strong { font-family: 'Manrope', sans-serif; font-size: clamp(36px, 4.7vw, 70px); font-weight: 500; letter-spacing: -.05em; }
 .socialNote { font-size: 10px; text-transform: uppercase; letter-spacing: .13em; }
 .socialArrow { color: var(--gold); font-size: 28px; }
 .socialRow.instagram:hover { background: #9d174d; color: white; }
@@ -169,14 +169,14 @@ main, section, div { min-width: 0; }
 .contactInner > p { align-self: start; color: var(--gold); font-size: 8px; text-transform: uppercase; letter-spacing: .17em; }
 .contact h2 { margin: 0; font-size: clamp(46px, 5.8vw, 90px); line-height: 1; }
 .contact h2 em { color: var(--red); font-style: normal; }
-.contactInner > a { grid-column: 2; min-height: 88px; padding: 0 26px; border-top: 1px solid rgba(255,255,255,.28); border-bottom: 1px solid rgba(255,255,255,.28); display: flex; align-items: center; justify-content: space-between; font-family: 'Unbounded', sans-serif; font-size: 11px; text-transform: uppercase; transition: background .3s, padding .3s; }
+.contactInner > a { grid-column: 2; min-height: 88px; padding: 0 26px; border-top: 1px solid rgba(255,255,255,.28); border-bottom: 1px solid rgba(255,255,255,.28); display: flex; align-items: center; justify-content: space-between; font-family: 'Manrope', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: background .3s, padding .3s; }
 .contactInner > a small { color: var(--muted); font-family: 'Manrope', sans-serif; font-size: 8px; letter-spacing: .14em; }
 .contactInner > a b { color: var(--gold); font-size: 31px; font-weight: 400; }
 .contactInner > a:hover { background: var(--gold); color: var(--ink); padding-left: 40px; }
 .contactInner > a:hover b { color: var(--ink); }
 
 .footer { min-height: 170px; display: grid; grid-template-columns: 1fr 1.4fr 1fr; align-items: center; border-top: 1px solid var(--line); color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .13em; }
-.footerName { margin: 0; color: var(--white); font-family: 'Unbounded', sans-serif; font-size: 17px; line-height: 1.05; letter-spacing: -.05em; }
+.footerName { margin: 0; color: var(--white); font-family: 'Manrope', sans-serif; font-size: 17px; font-weight: 700; line-height: 1.05; letter-spacing: -.04em; }
 .footer > p:nth-child(2) { margin: 0; text-align: center; line-height: 1.7; }
 .footer > a { justify-self: end; color: var(--gold); }
 
